@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --accent-color: #420000;
+    --text-color: white;
+    --link-click-color: #c2c2c2;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav * {
+    max-height: 100%;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.logo-text {
+    font-weight: 200;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.nav-links a:active {
+    user-select: none;
+    color: var(--link-click-color);
+}
+
+.announcements-ribbon {
+    position: sticky;
+    top: 0;
+    height: 30px;
+    background-color: #7df37d;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    gap: 40px;
+    overflow-x: hidden;
+}
+
+.announcements-item {
+    text-wrap: nowrap;
+}
+
+.announcements-item::before,
+.announcements-item::after {
+    content: "📢";
+}
+
+section {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 20px 200px;
+}
+
+section>h1 {
+    font-size: 40px;
+}
+
+.values p,
+.values li {
+    font-weight: 300;
+    font-size: 18px;
+}
